@@ -6,3 +6,5 @@ $git status
     .idea/  
     .gitignore  
     .Application/Runtime/
+    .DS_Store
+    .Install/
