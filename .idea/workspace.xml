@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40cb6871-6fed-4e68-bf5e-2465a9d1d0d0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4c268c4ee37cba8092398915f55cf187.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/4c268c4ee37cba8092398915f55cf187.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6fedbbe541e195344bf1450076482852.php" afterPath="$PROJECT_DIR$/Application/Runtime/Cache/Admin/6fedbbe541e195344bf1450076482852.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_03_26.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/Admin/17_03_26.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Runtime/Logs/App/17_03_26.log" afterPath="$PROJECT_DIR$/Application/Runtime/Logs/App/17_03_26.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.MD" afterPath="$PROJECT_DIR$/README.MD" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nn.md" afterPath="$PROJECT_DIR$/nn.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
