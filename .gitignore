@@ -8,3 +8,5 @@ $git status
     .Application/Runtime/
     .DS_Store
     .Install/
+    .Application/.DS_Store
+    .Application/Admin/.DS_Store
