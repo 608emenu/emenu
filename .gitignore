@@ -2,9 +2,7 @@ $git status
 # On branch master  
 # Untracked files:  
 #   (use "git add <file>..." to include in what will be committed)  
-#  
-    .idea/  
-    .gitignore  
-    .Application/Runtime/
+#
+    .idea/
+    Application/Runtime/
     .DS_Store
-    .Install/

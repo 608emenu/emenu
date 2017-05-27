@@ -82,20 +82,20 @@
 		<div class="navbar-header pull-left">
 			<a href="#" class="navbar-brand">
 				<small>
-					WeMall V3.4
+					Emenu 1.0 系统后台
 				</small>
 			</a><!-- /.brand -->
 		</div><!-- /.navbar-header -->
 
 		<div class="navbar-header pull-right" role="navigation">
 			<ul class="nav ace-nav">
-				<li class="light-blue">
-					<a data-toggle="dropdown" class="dropdown-toggle" href="#">
-						<i class="icon-desktop  icon-desktop"></i>
-						微信端预览
-					</a>
-					<div class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
-						<!DOCTYPE html>
+				<!--<li class="light-blue">-->
+					<!--<a data-toggle="dropdown" class="dropdown-toggle" href="#">-->
+						<!--<i class="icon-desktop  icon-desktop"></i>-->
+						<!--微信端预览-->
+					<!--</a>-->
+					<!--<div class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">-->
+						<!--<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -111,9 +111,9 @@
 		</div>
 	</div>
 </body>
-</html>
-					</div>
-				</li>
+</html>-->
+					<!--</div>-->
+				<!--</li>-->
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
 						<span class="user-info">
@@ -147,14 +147,14 @@
 		<li class="active">
 			<a href="">
 				<i class="icon-home"></i>
-				<span class="menu-text"> 商城设置 </span>
+				<span class="menu-text"> 菜单设置 </span>
 			</a>
 		</li>
 
 		<li>
 			<a href="javascript:void(0)">
 				<i class="icon-list"></i>
-				<span class="menu-text"> 菜单管理 </span>
+				<span class="menu-text"> 分类管理 </span>
 			</a>
 		</li>
 
@@ -171,25 +171,25 @@
 				<span class="menu-text"> 订单管理 </span>
 			</a>
 		</li>
-		
-		<li>
-			<a href="javascript:void(0)">
-				<i class="icon-group"></i>
-				<span class="menu-text"> 用户管理 </span>
-			</a>
-		</li>
-		
-		<li>
-			<a href="javascript:void(0)">
-				<i class="icon-edit"></i>
-				<span class="menu-text"> 微信管理 </span>
-			</a>
-		</li>
+		<!---->
+		<!--<li>-->
+			<!--<a href="javascript:void(0)">-->
+				<!--<i class="icon-group"></i>-->
+				<!--<span class="menu-text"> 用户管理 </span>-->
+			<!--</a>-->
+		<!--</li>-->
+		<!---->
+		<!--<li>-->
+			<!--<a href="javascript:void(0)">-->
+				<!--<i class="icon-edit"></i>-->
+				<!--<span class="menu-text"> 微信管理 </span>-->
+			<!--</a>-->
+		<!--</li>-->
 
 		<li>
 			<a href="javascript:void(0)">
 				<i class="icon-cloud"></i>
-				<span class="menu-text"> 技术支持 </span>
+				<span class="menu-text"> 关于我们 </span>
 			</a>
 		</li>
 	</ul><!-- /.nav-list -->
