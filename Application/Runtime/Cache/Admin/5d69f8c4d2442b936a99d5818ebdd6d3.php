@@ -77,74 +77,18 @@
 		<script src="/emenu/Public/Plugin/style/js/ace.min.js"></script>
 	</head>
 	<body>
-<div class="col-sm-12 widget-container-span">
-	<div class="widget-box transparent">
-		<div class="widget-body">
-			<div class="widget-main padding-12 no-padding-left no-padding-right">
-				<div class="tab-content padding-4">
-					<div id="home1" class="tab-pane in active">
-						<div class="row">
-							<div class="col-xs-12 no-padding-right">
-								<div class="table-responsive">
-									<table id="sample-table-1"
-										class="table table-striped table-bordered table-hover">
-										<thead>
-											<tr>
-												<!-- <th class="center"><label> <input
-														type="checkbox" class="ace"> <span class="lbl"></span>
-												</label></th> -->
-												<th>ID</th>
-												<th>用户名</th>
-												<th>联系方式</th>
-												<th>送货地址</th>
-												<th>加入时间</th>
-											</tr>
-										</thead>
-
-										<tbody>
-										<?php if(is_array($result)): $i = 0; $__LIST__ = $result;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$result): $mod = ($i % 2 );++$i;?><tr>
-												<!-- <td class="center"><label> <input
-														type="checkbox" class="ace"> <span class="lbl"></span>
-												</label></td> -->
-												
-												<td><?php echo ($result["id"]); ?></td>
-												<td><?php echo ($result["username"]); ?></td>
-												<td><?php echo ($result["phone"]); ?></td>
-												<td><?php echo ($result["address"]); ?></td>
-												<td><?php echo ($result["time"]); ?></td>
-											</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-										</tbody>
-									</table>
-									<div class="pagination" style="margin:0px;">
-									    <?php echo ($page); ?>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-		
-		<script type="text/javascript">
-			function addSubmenu(o) {
-				var subid = $(o).parent().prev().prev().html();
-				$('select[name="parent"]').val(subid);
-				$('input[name="addmenu"]').val('0');
-				$('input[name="name"]').val('');
-				
-				$('#myTab li').eq(1).find('a').click();
-			}
-			function reSubmenu(o){
-				var name = $(o).parent().prev().html().replace(/&nbsp;/g,'').replace('├─','');
-				var pid = $(o).parent().prev().prev().attr('parent');
-				var subid = $(o).parent().prev().prev().html();
-				$('select[name="parent"]').val(pid);
-				$('input[name="name"]').val(name);
-				$('input[name="addmenu"]').val(subid);
-				$('#myTab li').eq(1).find('a').click();
-			}
-		</script>
-	</div>
-</div>
+<style type="text/css">
+	body {
+		background-image: url("http://i1.piimg.com/1949/0e30154fbb82ccb3t.jpg");
+		background-repeat: repeat;
+		background-size: 30px;
+	}
+</style>
+<body>
+<h1>「黄金脆皮稽」工作室</h1>
+<br>
+<h3>  &emsp;&emsp;· <a target="_blank"  href="http://blog.csdn.net/leiflyy">李宇阳</a> </h3>
+<h3>  &emsp;&emsp;· <a target="_blank" href="http://isunday.top">纪笑难</a> </h3>
+<h3>  &emsp;&emsp;· <a target="_blank"  href="https://github.com/cherrymeteor">卢昊</a> </h3>
+<h3>  &emsp;&emsp;· <a target="_blank"  href="https://www.baidu.com/s?wd=%E5%86%AF%E5%AE%87%E5%8D%9A&rsv_spt=1&rsv_iqid=0xe4a97a2b00067abc&issp=1&f=8&rsv_bp=0&rsv_idx=2&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=11&rsv_sug1=13&rsv_sug7=100&rsv_sug2=0&inputT=3960&rsv_sug4=3961">冯宇博</a> </h3>
+</body>
