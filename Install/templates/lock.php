@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>WeMall微信商城管理系统</title>
+        <title>Emenu电子菜单</title>
         <link rel="stylesheet" href="./css/install.css?v=9.0" />
     </head>
     <body>

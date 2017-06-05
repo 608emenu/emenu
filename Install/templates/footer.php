@@ -1,1 +1,1 @@
-<div class="footer">  2013 - 2014 <a href="http://www.inuoer.com" target="_blank">WeMall微信商城管理系统</a>  </div>
+<div class="footer">  2017 - 2018 <a href="http://blog.csdn.net/leiflyy" target="_blank">Emenu电子菜单</a>  </div>

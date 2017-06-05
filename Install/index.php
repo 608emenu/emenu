@@ -1,4 +1,4 @@
-<?php
+ <?php
 if (file_exists('./install.lock')==true) {
   include_once ("./templates/lock.php");
   exit;
