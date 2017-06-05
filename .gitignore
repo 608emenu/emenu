@@ -1,0 +1,4 @@
+.idea
+Application/Runtime/
+.DS_Store
+*.lock
