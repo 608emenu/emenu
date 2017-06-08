@@ -124,9 +124,10 @@
                                 <td width="80px"><label for="name" class="ui-input-text">姓名：</label></td>
                                 <td>
                                     <div class="ui-input-text">
-                                        <input id="name" name="name" placeholder="" value="{$users.username}"
+                                        <input id="name" name="name" placeholder="" value=""
                                                type="text"
                                                class="ui-input-text">
+                                        <!--{$users.username}-->
                                     </div>
                                 </td>
                             </tr>
@@ -135,8 +136,9 @@
                                 <td width="80px"><label for="phone" class="ui-input-text">联系电话：</label></td>
                                 <td>
                                     <div class="ui-input-text">
-                                        <input id="phone" name="phone" placeholder="" value="{$users.phone}" type="tel"
+                                        <input id="phone" name="phone" placeholder="" value="" type="tel"
                                                class="ui-input-text">
+                                        <!--{$users.phone}-->
                                     </div>
                                 </td>
                             </tr>
@@ -152,16 +154,16 @@
                                 </select></td>
                             </tr>
                             <tr>
-                                <td width="80px"><label for="address"
-                                                        class="ui-input-text">桌号：</label></td>
-                                <td><textarea id="address" name="address" placeholder=""
-                                              value="" class="ui-input-text">{$users.address}</textarea>
+                                <td width="80px"><label for="address" class="ui-input-text">桌号：</label></td>
+                                <td>
+                                    <input type="text" id="address" name="address" value="{$users.address}">
+                                    <!--<textarea id="address" name="address" placeholder="" value="" class="ui-input-text">{$users.address}</textarea>-->
                                 </td>
                             </tr>
                             <tr>
                                 <td width="80px"><label for="note" class="ui-input-text">备注：</label></td>
-                                <td><textarea id="note" name="note" placeholder=""
-                                              class="ui-input-text"></textarea></td>
+                                <td><textarea id="note" name="note" placeholder="" class="ui-input-text"></textarea>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
