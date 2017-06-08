@@ -38,7 +38,7 @@ class IndexController extends Controller
             $this->assign("users", $usersresult);
             $this->display();
         } else {
-            echo '<h2>请刷新后重新输入桌号！</h2>';
+            echo '<h2>请重新扫描桌上二维码！</h2>';
         }
     }
 
