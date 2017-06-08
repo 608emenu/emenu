@@ -75,7 +75,8 @@ class IndexController extends Controller
         $note = $userData [4] [value];
 
         $totalprice = I("post.totalPrice");
-        $cartdata = stripslashes(I("post.cartData"));
+//        $cartdata = stripslashes(I("post.cartData"));
+        $cartdata = I("post.cartData");
 
         $orderid = date("ymdhis") . mt_rand(1, 9);
         $time = date("Y/m/d H:i:s");
