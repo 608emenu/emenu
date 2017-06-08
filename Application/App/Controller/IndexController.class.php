@@ -16,31 +16,30 @@ class IndexController extends Controller
 
     public function index()
     {
-//		if (I("get.uid")) {
+        if (I("get.uid")) {
+            $info = R("Api/Api/gettheme");
+            C("DEFAULT_THEME", $info ["theme"]);
+            $this->assign("info", $info);
 
-        $info = R("Api/Api/gettheme");
-        C("DEFAULT_THEME", $info ["theme"]);
-        $this->assign("info", $info);
+            $menuresult = R("Api/Api/getmenu");
+            $this->assign("menu", $menuresult);
 
-        $menuresult = R("Api/Api/getmenu");
-        $this->assign("menu", $menuresult);
+            $goodsresult = R("Api/Api/getgood");
+            $this->assign("goods", $goodsresult);
 
-        $goodsresult = R("Api/Api/getgood");
-        $this->assign("goods", $goodsresult);
+            $uid = I("get.uid");
+            $usersresult = R("Api/Api/getuser", array($uid));
 
-        $uid = I("get.uid");
-        $usersresult = R("Api/Api/getuser", array($uid));
+            $alipay = M("Alipay")->find();
+            if ($alipay) {
+                $this->assign("alipay", 1);
+            }
 
-        $alipay = M("Alipay")->find();
-        if ($alipay) {
-            $this->assign("alipay", 1);
+            $this->assign("users", $usersresult);
+            $this->display();
+        } else {
+            echo '<h2>请刷新后重新输入桌号！</h2>';
         }
-
-        $this->assign("users", $usersresult);
-        $this->display();
-//		} else {
-//			echo '请使用微信访问!';
-//		}
     }
 
     public function fetchgooddetail()
