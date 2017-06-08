@@ -14,6 +14,7 @@
         var rooturl = '__ROOT__';
         var indexurl = '{:U("App/Index/index")}';
     </script>
+
 </head>
 <body class="sanckbg mode_webapp">
 <div id="menu-container" style="display: block;">
@@ -48,7 +49,7 @@
                     <volist name="goods" id="goodsvo">
                         <dd menu="{$goodsvo.menu_id}">
                             <div class="tupian">
-                                <img src="__PUBLIC__/Uploads/{$goodsvo.image}"
+                                <img src="__PUBLIC__{$goodsvo.savepath}{$goodsvo.image}"
                                      onclick="showDetail('{$goodsvo.id}');"> <a
                                     href="javascript:doProduct('{$goodsvo.id}','{$goodsvo.name}','{$goodsvo.price}');"
                                     class="add"><p
@@ -128,7 +129,6 @@
                                         <input id="name" name="name" placeholder="" value=""
                                                type="text"
                                                class="ui-input-text">
-                                        <!--{$users.username}-->
                                     </div>
                                 </td>
                             </tr>
@@ -139,7 +139,6 @@
                                     <div class="ui-input-text">
                                         <input id="phone" name="phone" placeholder="" value="" type="tel"
                                                class="ui-input-text">
-                                        <!--{$users.phone}-->
                                     </div>
                                 </td>
                             </tr>
@@ -148,25 +147,23 @@
                                 <td colspan="2"><select name="pay" class="selectstyle"
                                                         id="select1">
                                     <option value="0">货到付款</option>
-                                    <if condition="$alipay eq 1">
-                                        <option value="1">支付宝在线支付</option>
-                                    </if>
-                                    <option value="2">微信支付</option>
+                                    <option value="1">微信支付</option>
                                 </select></td>
                             </tr>
                             <tr>
                                 <td width="80px"><label for="address" class="ui-input-text">桌号：</label></td>
                                 <td>
-									<div class="ui-input-text">
-                                    <input type="text" id="address" class="ui-input-text" name="address" value="{$users.address}">
-									</div>
-                                    <!--<textarea id="address" name="address" placeholder="" value="" class="ui-input-text">{$users.address}</textarea>-->
+                                    <div class="ui-input-text">
+                                        <input id="address" name="address" placeholder="" value="{$users.address}"
+                                               type="text"
+                                               class="ui-input-text">
+                                    </div>
                                 </td>
                             </tr>
                             <tr>
-                                <td width="80px"><label for="note" class="ui-input-text">备注：</label></td>
-                                <td><textarea id="note" name="note" placeholder="" class="ui-input-text"></textarea>
-                                </td>
+                                <td width="80px"><label for="" class="ui-input-text">备注：</label></td>
+                                <td><textarea name="note" placeholder=""
+                                              class="ui-input-text"></textarea></td>
                             </tr>
                             </tbody>
                         </table>
@@ -187,7 +184,7 @@
         <div class="btn-group"
              style="position: fixed; font-size: 12px; width: 220px; bottom: 80px; left: 50%; margin-left: -110px; z-index: 999;">
             <div class="del" style="font-size: 14px;">
-                <img src="../Public/Static/images/ajax-loader.gif" alt="loader">正在提交订单...
+                <img src="__IMG__/ajax-loader.gif" alt="loader">正在提交订单...
             </div>
         </div>
     </div>
@@ -210,7 +207,7 @@
             <div class="btn-group"
                  style="position: fixed; font-size: 12px; width: 220px; bottom: 80px; left: 50%; margin-left: -110px; z-index: 999;">
                 <div class="del" style="font-size: 14px;">
-                    <img src="../Public/Static/images/ajax-loader.gif" alt="loader">正在获取订单...
+                    <img src="__IMG__/ajax-loader.gif" alt="loader">正在获取订单...
                 </div>
             </div>
         </div>
@@ -234,15 +231,15 @@
 <div class="footermenu">
     <ul>
         <li id="home"><a class="active" href="javascript:void(0);"> <img
-                src="../Public/Static/images/home.png">
+                src="__IMG__/home.png">
             <p>首页</p>
         </a></li>
 
         <li id="cart"><a href="javascript:void(0);"> <span class="num" id="cartN2">0</span> <img
-                src="../Public/Static/images/cart.png">
+                src="__IMG__/cart.png">
             <p>购物车</p>
         </a></li>
-        <li id="user"><a href="javascript:void(0);"> <img src="../Public/Static/images/user.png">
+        <li id="user"><a href="javascript:void(0);"> <img src="__IMG__/user.png">
             <p>我的</p>
         </a></li>
     </ul>
