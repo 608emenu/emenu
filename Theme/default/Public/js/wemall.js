@@ -170,6 +170,10 @@ function doProduct(id, name, price) {
     }
 }
 function submitOrder() {
+    if($('#totalPrice').html()==0){
+        alert("购物车为空不能提交！");
+        return false;
+    }
 
     //获取订单信息
     var json = '';
