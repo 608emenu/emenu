@@ -70,7 +70,7 @@ class IndexController extends Controller
         $userData = I("post.userData");
         $username = $userData [0] [value];
         $phone = $userData [1] [value];
-        $pay = $userData [2] [value];
+        $pay_style = $userData [2] [value];
         $address = $userData [3] [value];
         $note = $userData [4] [value];
 
@@ -80,14 +80,6 @@ class IndexController extends Controller
 
         $orderid = date("ymdhis") . mt_rand(1, 9);
         $time = date("Y/m/d H:i:s");
-        switch ($pay) {
-            case 0 :
-                $pay_style = "货到付款";
-                break;
-            case 1 :
-                $pay_style = "微信支付";
-                break;
-        }
 
         $data ["orderid"] = $orderid;
         $data ["totalprice"] = $totalprice;
