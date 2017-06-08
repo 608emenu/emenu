@@ -2,3 +2,4 @@
 Application/Runtime/
 .DS_Store
 *.lock
+Public/Conf/config.php
